@@ -1,34 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <title>Cream Shakes</title>
+    <meta property="og:title" content="OnConf template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Source Sans Pro;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
+  </head>
+  <body>
     <div>
-        <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="home-nav">
-            <span class="navLink">Home</span>
-            <span class="navLink">About Us</span>
-            <span class="navLink">Menu</span>
-            <span class="navLink">Online Orders</span>
-          </nav>
-          <button class="button">
-            <span>Login</span>
-            <svg viewBox="0 0 1024 1024" class="home-icon">
-              <path
-                d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z">
-              </path>
-            </svg>
-          </button>
-          <div data-thq="thq-burger-menu" class="home-burger-menu">
-            <svg viewBox="0 0 1024 1024" class="home-icon02">
-              <path
-                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-              ></path>
-            </svg>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          
+          <header data-thq="thq-navbar" class="home-navbar">
+            <div
+              data-thq="thq-navbar-nav"
+              data-role="Nav"
+              class="home-desktop-menu"
+            >
+              <nav
+                data-thq="thq-navbar-nav-links"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <span class="navLink">Home</span>
+                <span class="navLink">About Us</span>
+                <span class="navLink">Menu</span>
+                <span class="navLink">Online Orders</span>
+              </nav>
+              <button class="button">
+                <span>Login</span>
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path
+                    d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon02">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+             
+               
+             
+
+          </header>
+          <div class="home-hero-content">
+            <h1 class="home-text07">Cream Shakes</h1>
+            <div class="home-caption">
+              <button class="button-style-1 button home-register2">
+                <span class="home-text08">
+                  <span>Open</span>
+                  <br />
+                  <span>Now</span>
+                </span>
+              </button>
+              <p class="home-caption1">Just for your Food Cravings !!</p>
+            </div>
+            <button class="button-style-2 button home-register2">
+              <style>
+                .button-style-2{
+                  border-color: azure;
+                  color: azure;
+                }
+              </style>
+              <span class="home-text">
+                
+                <span>Online Orders</span>
+                <br>
+                <span>Available</span>
+              </span>
+              
+            </button>
           </div>
+        </section>
+        <div class="container">
+          <img src="/Users/tharan/Downloads/e-commerce site/public/bg1.jpg">
+          <img src="/Users/tharan/Downloads/e-commerce site/public/bg1.jpg">
+          <img src="/Users/tharan/Downloads/e-commerce site/public/bg1.jpg">
+      
+        </div>
+        <section class="home-products">
+          <div class="home-header">
+            <div data-aos="fade-right" class="home-heading">
+              <h2 class="home-title">Special Shakes</h2>
+              <p class="home-caption2">
+                At Cream Shakes, we are passionate about providing our customers
+                with the best cafe experience. Treat yourself to our heavenly
+                creamy shakes. Made with love and only the freshest ingredients.
+              </p>
+            </div>
+          </div>
+          <div class="home-list"> 
+          <div class="home-row">
+            <img src="/Users/tharan/Documents/web design/application/cafe /untitled folder/public/photo-1577805947697-89e18249d767.jpg" alt="image">
+            <div class="home-row">
+              <img src="/Users/tharan/Documents/web design/application/cafe /untitled folder/public/photo-1641665271888-575e46923776.jpg" alt="image">
+            </div>
+          </div>
+            <div class="home-row">
+              <img src="/Users/tharan/Documents/web design/application/cafe /untitled folder/public/photo-1641893754790-99d96ac55745.jpg" alt="image">
+              <div class="home-row">
+                <img src="/Users/tharan/Documents/web design/application/cafe /untitled folder/public/photo-1623400518585-164b430fbe74.jpg" alt="image">
+              </div>
+              
+              </div>
+            <div class="home-row">
+              <img src="/Users/tharan/Documents/web design/application/cafe /untitled folder/public/photo-1660715683649-e381e56eb07a.jpg" alt="image">
+              <div class="home-row">
+                <img src="/Users/tharan/Documents/web design/application/cafe /untitled folder/public/photo-1590373927063-cb2d69209a8b.jpg" alt="image">
+              </div>
+              
+               </div>
+          </div>
+        </section>
+        <section class="home-about">
+          <div class="home-header1">
+            <h1 class="home-text12">About Us</h1>
+            <div data-aos="fade-right" class="home-heading1">
+              <p class="home-caption3">
+                Our team is dedicated to creating a warm and welcoming
+                atmosphere for all of our customers. We strive to use only the
+                freshest ingredients in our products, and our knowledgeable
+                staff is always happy to answer any questions you may have. Come
+                visit us at Cream Shakes and taste the difference for yourself !
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <footer class="home-footer">
+          <div class="home-content">
+            <div class="home-details">
+              <p class="home-description">
+                <span>For franchise call us or mail us.</span>
+                <br />
+                <span>
+                  We make sure as we grow everyone along with us also grow.
+                </span>
+                <br />
+                <span>
+                  Get Connected with us. Follow us on Social Media .
+                </span>
+                <br />
+              </p>
+            </div>
+            <div class="home-socials">
+              <img alt="image" src="public/linkedin.svg" class="social" />
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link4"
+              >
+                <img
+                  alt="image"
+                  src="public/instagram.svg"
+                  class="home-image16 social"
+                />
+              </a>
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link5"
+              >
+                <img
+                  alt="image"
+                  src="public/twitter.svg"
+                  class="home-image17 social"
+                />
+              </a>
+              <svg viewBox="0 0 1024 1024" class="home-icon16">
+                <path
+                  d="M854 656q18 0 30 12t12 30v148q0 50-42 50-298 0-512-214t-214-512q0-42 50-42h148q18 0 30 12t12 30q0 78 24 150 8 26-10 44l-82 72q92 192 294 290l66-84q12-12 30-12 10 0 14 2 72 24 150 24z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="home-container6">
+            <p class="home-caption4">
+              <br />
+              <span>2023 - Copyrights - All rights reserved</span>
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
-</body>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>
